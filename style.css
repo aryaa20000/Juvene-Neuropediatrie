@@ -124,21 +124,22 @@ main
 {
 	flex-grow: 1; /* permet d'adapter la place restante dans le flex en agrandissant les éléments compris dedans*/
 	padding: 4%;
-	margin-bottom: 20px;/* défini la taille de la marge du bas exterieure*/
+	margin-bottom: 20px;/* défini l'épaisseur de la marge intérieure du bas*/
 }
 article
 {
 	margin-bottom: 20px;
+}
 
 
 footer
 {
-	margin-top: 50px;/* défini la taille de la marge du haut exterieure*/
-    padding-top: 20px;/* défini la taille de la marge du bas interieure*/
-	background-color:rgb(3, 140, 140); /*défini la couleur du fond d'écran*/
+	margin-top: 50px;/* défini l'épaisseur de la margeextérieure du haut*/
+    padding-top: 20px;/* défini l'épaisseur de la marge intérieur du haut*/
+	background-color:rgb(3, 140, 140);/* défini la couleur de fond d'écran de l'élément*/
 	opacity: 0.9;
     padding: 15px;
-    flex-shrink: 0;/* définit la possibilité de rétrécir l'élément si le conteneur est trop petit pour contenir des éléments*/
+    flex-shrink: 0;/* défini la taille minimal de l'élément pour pouvoir contenir des éléments flexibles et donc modifier la taille de chaque élément*/
 
 }
 
@@ -170,17 +171,17 @@ h1
 }
 h2
 {
-  text-decoration: underline;/* défini la "décoration" de l'élément, dans ce cas ci, il est souligné*/
+  text-decoration: underline;/* défini la "décoration" de l'élément. ici, il est souligné*/
 }
 a
 {
-	text-decoration: none;
+	text-decoration: none;/* supprime la décoration de l'élément*/
 }
-a:hover/*action dynamique qui modifiera l'élément au survol*/
+a:hover/* élément dynamique qui réagit à une action. ici, au survol de l'élément*/
 {
 	color:purple;
 }
-@media screen and (max-width: 712px) /*reflexité par rapport à la taille de l'écran*/
+@media screen and (max-width: 712px) /* réflexivité dsuite à un rétrécissement de l'écran*/
 {
 
 
@@ -220,19 +221,19 @@ a:hover/*action dynamique qui modifiera l'élément au survol*/
 	}
     nav 
     {
-  		position: sticky;/* l'élément restera fixe quand la page sera scrollée*/
- 		top: 0;/* position où l'élément restera fixe*/
+  		position: sticky;
+ 		top: 0;
 	}
 
 
      .hopitalTivoli,.hopitalHUDERF
      {
-		  float:none;
+		  float:none;/*suppression du flottement*/
 
 	}
 	.conteneur iframe
 	{
-		width: 100%;
+		width: 100%;/* adaptation de l'iframe à la largeur de l'écran*/
 		height: auto;
 		text-align: center;
 	}
@@ -258,7 +259,7 @@ a:hover/*action dynamique qui modifiera l'élément au survol*/
 }
 
 }
-@media (prefers-color-scheme: dark) /*réflexivité par rapport au mode d'affichage de l'écran*/
+@media (prefers-color-scheme: dark) /* réflexivité réagissant aux choix du thème de l'explorateur  utilisé*/
 {
   body 
   {
