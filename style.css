@@ -258,8 +258,8 @@ a:hover/* élément dynamique qui réagit à une action. ici, au survol de l'él
 	
 }
 
-}
-@media (prefers-color-scheme: dark) /* réflexivité réagissant aux choix du thème de l'explorateur  utilisé*/
+
+@media (prefers-color-scheme: dark)
 {
   body 
   {
