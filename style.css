@@ -14,39 +14,41 @@
 	font-family:Lora;
 	src : url(police/Lora/Lora-VariableFont_wght.ttf);
 }
-
+/* mise en page mise par défaut*/
 *
 {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+/* création d'un  bloc contenant un ensemble de bloc
+ le flex-wrap déclare si les boxs restent sur une ligne ou peuvent déborder*/
 .container
 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: flex;/* les blocs sont disposés en ligne*/
+	flex-wrap: wrap;/*les box restent sur la même ligne*/
+	justify-content: center;/* les blocs sont centrés sur la page*/
 }
 .hopitalTivoli
 {
-	float: right;
+	float: right;/* l'image flottera à droite du texte*/
 }
 .magazine
 {
-	width: 40%;
-	height: auto;
+	width: 40%;/* la largeur de l'élément occupera 40 pourcent de la page*/
+	height: auto;/* la hauteur sera proportionnelle à la largeur pour ne pas déformer l'élément*/
 }
 .element
 {
-	background-color:rgb(3, 140, 140);
-	opacity: 0.9;
-	padding: 10px;
-	border-radius: 50px;
-	margin: 10px;
+	background-color:rgb(3, 140, 140);/* couleur de l'élément*/
+	opacity: 0.9;/*opacité de l'élément*/
+	padding: 10px;/*définit les marges intérieures de l'élément*/
+	border-radius: 50px;/*défini les 4 angles de l'éléments*/
+	margin: 10px;/* défini les marges exterieur de l'élément*/
 }
 .element a
 {
-	color: white;
+	color: white;/* couleur de l'élément*/
 }
 .ensemble
 {
@@ -57,9 +59,9 @@
 .objet
 {
 	color: white;
-	border: double 3px;
+	border: double 3px;/* défini le type de bordure ainsi que son épaisseur*/
 	padding: 10px;
-	border-radius: 40px 15px 40px 15px;
+	border-radius: 40px 15px 40px 15px; /* défini l'angles de l'élément angle par angl*/
 	margin: 10px;
 
 }
@@ -69,7 +71,7 @@
 }
 .image
 {
-	float: left;
+	float: left;/* l'image flottera à gauche de l'élément*/
 }
 .hopitalHUDERF
 {
@@ -77,14 +79,14 @@
 }
 .neuropediatre
 {	
-	text-indent : 35%;
-	font-size: 30px
+	text-indent : 35%;/* le texte sera indenté selon le nombre défini*/
+	font-size: 30px/* taille du texte*/
 
 }
 .conteneur
 {
-        display: grid;
-        gap: 5%;
+        display: grid;/* les éléments seront disposés en grille*/
+        gap: 5%;/* espace entre les éléments*/
         
 }
 .conteneur h3
@@ -98,13 +100,13 @@
 }
 .diagnostique
 {
-	border-bottom: 1px solid;
+	border-bottom: 1px solid;/* défini l'epaisseur et le type de la bordure du bas*/
 }
 
 body
 {
 
-	font-family: Ancizar,Lora,Friends, sans-serif;
+	font-family: Ancizar,Lora,Friends, sans-serif;/* défini la police du texte*/
 	color: black;
 }
 html, body 
@@ -112,7 +114,7 @@ html, body
   height: auto;
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;/*défini la direction de la ligne flex*/
 }
 header
 {
@@ -120,24 +122,23 @@ header
 }
 main 
 {
-	flex-grow: 1; 
+	flex-grow: 1; /* permet d'adapter la place restante dans le flex en agrandissant les éléments compris dedans*/
 	padding: 4%;
-	margin-bottom: 20px;
+	margin-bottom: 20px;/* défini la taille de la marge du bas exterieure*/
 }
 article
 {
 	margin-bottom: 20px;
-}
 
 
 footer
 {
-	margin-top: 50px;
-    padding-top: 20px;
-	background-color:rgb(3, 140, 140);
+	margin-top: 50px;/* défini la taille de la marge du haut exterieure*/
+    padding-top: 20px;/* défini la taille de la marge du bas interieure*/
+	background-color:rgb(3, 140, 140); /*défini la couleur du fond d'écran*/
 	opacity: 0.9;
     padding: 15px;
-    flex-shrink: 0;
+    flex-shrink: 0;/* définit la possibilité de rétrécir l'élément si le conteneur est trop petit pour contenir des éléments*/
 
 }
 
@@ -156,11 +157,6 @@ p
 {
 	float: left;
 }
-nav
-{
-	float: clear;
-
-}
 
 img
 {
@@ -174,17 +170,17 @@ h1
 }
 h2
 {
-  text-decoration: underline;
+  text-decoration: underline;/* défini la "décoration" de l'élément, dans ce cas ci, il est souligné*/
 }
 a
 {
 	text-decoration: none;
 }
-a:hover
+a:hover/*action dynamique qui modifiera l'élément au survol*/
 {
 	color:purple;
 }
-@media screen and (max-width: 712px) 
+@media screen and (max-width: 712px) /*reflexité par rapport à la taille de l'écran*/
 {
 
 
@@ -224,8 +220,8 @@ a:hover
 	}
     nav 
     {
-  		position: sticky;
- 		top: 0;
+  		position: sticky;/* l'élément restera fixe quand la page sera scrollée*/
+ 		top: 0;/* position où l'élément restera fixe*/
 	}
 
 
@@ -262,7 +258,7 @@ a:hover
 }
 
 }
-@media (prefers-color-scheme: dark) 
+@media (prefers-color-scheme: dark) /*réflexivité par rapport au mode d'affichage de l'écran*/
 {
   body 
   {
