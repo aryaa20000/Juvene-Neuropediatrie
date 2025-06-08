@@ -1,0 +1,267 @@
+/*police téléchargée*/
+@font-face
+{ 
+	font-family:Ancizar;
+	src : url(police/Ancizar/AncizarSerif-Italic-VariableFont_wght.ttf);
+}
+@font-face
+{
+    font-family: friends;
+    src: url(police/friends/GABRWFFR.ttf);
+}
+@font-face
+{ 
+	font-family:Lora;
+	src : url(police/Lora/Lora-VariableFont_wght.ttf);
+}
+
+*
+{
+	box-sizing: border-box;
+}
+.container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.hopitalTivoli
+{
+	float: right;
+}
+.magazine
+{
+	width: 40%;
+	height: auto;
+}
+.element
+{
+	background-color:rgb(3, 140, 140);
+	opacity: 0.9;
+	padding: 10px;
+	border-radius: 50px;
+	margin: 10px;
+}
+.ensemble
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.objet
+{
+	color: black;
+	padding: 10px;
+	border-radius: 50px;
+	margin: 10px;
+
+}
+.image
+{
+	float: left;
+}
+.hopitalHUDERF
+{
+	float: left;
+}
+.neuropediatre
+{	
+	text-indent : 35%;
+	font-size: 30px
+
+}
+.conteneur
+{
+        display: grid;
+        gap: 5%;
+        
+}
+.conteneur h3
+{
+	text-align: center;
+}
+.publication
+{
+	border: 1px solid;
+	text-align: center;
+}
+.diagnostique
+{
+	border-bottom: 1px solid;
+}
+
+body
+{
+
+	font-family: Ancizar,Lora,Friends, sans-serif;
+	color: black;
+}
+html, body 
+{
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+header
+{
+	height: 30%
+}
+main 
+{
+	flex-grow: 1; 
+	padding: 4%;
+	argin-bottom: 20px;
+}
+
+
+footer
+{
+	background-color:rgb(3, 140, 140);
+	opacity: 0.9;
+    padding: 15px;
+    flex-shrink: 0;
+
+}
+
+span
+{
+	text-align: right;
+}
+
+a
+{
+	color:black;
+}
+
+
+p
+{
+	float: left;
+}
+nav
+{
+	float: clear;
+
+}
+
+img
+{
+	width : 200px;
+	height : 210px;
+}
+h1
+{
+	text-indent: 26%;
+	font-size: 500%;
+}
+h2
+{
+  text-decoration: underline;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	color:purple;
+}
+@media screen and (max-width: 712px) 
+{
+
+
+    h1
+        {
+        	font-size: 300%;
+        	text-indent: 4%;
+        	text-align: center;
+
+        }
+    body
+        {
+            font-family: Lora,Arial,Friends,sans-serif;
+        }
+     
+	header
+		{
+			height: 80%
+		}
+	main 
+		{
+			padding-top: 60px;
+			margin-bottom:65%		
+		}
+
+
+	footer
+		{
+			background-color:rgb(3, 140, 140);
+			opacity: 0.9;
+		    padding: 10px;
+
+		}
+    nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+
+     .hopitalTivoli,.hopitalHUDERF
+     {
+		  float:none;
+
+	}
+	.conteneur iframe
+	{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.conteneur h3
+	{
+		text-align: left;
+		size: 80%;
+		float: left;
+		padding-right: 0%;
+		position: sticky;
+		top: 0;
+		flex-shrink: 0;
+		width: 15%;
+		position: sticky;
+  		top: 10%;
+  		background-color: white;
+	}
+
+	.conteneur p
+	{
+		padding-left: 40%;
+	}
+	
+
+
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+    
+}
+@media (prefers-color-scheme: dark) 
+{
+  body 
+  {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  a 
+  {
+  	color: #ffffff;
+  }
+  .cas
+  {
+  	background-color: black;
+  }
+}
