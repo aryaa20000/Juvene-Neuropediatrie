@@ -253,7 +253,11 @@ a:hover
     background-color: #121212;
     color: #ffffff;
   }
-  a,p
+  a
+  {
+  	color: #ffffff;
+  }
+  p
   {
   	color: #ffffff;
   }
