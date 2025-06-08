@@ -209,6 +209,10 @@ a:hover
 		padding-top: 60px;
 		margin-bottom:65%		
 	}
+	article
+	{
+		margin-bottom: 50px;
+	}
 
 
 	footer
@@ -256,12 +260,7 @@ a:hover
 	}
 	
 }
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #ffffff;
-  }
-    
+
 }
 @media (prefers-color-scheme: dark) 
 {
