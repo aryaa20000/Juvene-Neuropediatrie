@@ -1,0 +1,298 @@
+/*police téléchargée*/
+@font-face
+{ 
+	font-family:Ancizar;
+	src : url(police/Ancizar/ancizarSerif-Italic-VariableFont_wght.ttf);
+}
+@font-face
+{
+    font-family: friends;
+    src: url(police/friends/gabrwffr.ttf);
+}
+@font-face
+{ 
+	font-family:Lora;
+	src : url(police/Lora/lora-VariableFont_wght.ttf);
+}
+/* mise en page mise par défaut*/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* création d'un  bloc contenant un ensemble de bloc
+ le flex-wrap déclare si les boxs restent sur une ligne ou peuvent déborder*/
+.container
+{
+	display: flex;/* les blocs sont disposés en ligne*/
+	flex-wrap: wrap;/*les box restent sur la même ligne*/
+	justify-content: center;/* les blocs sont centrés sur la page*/
+}
+.hopitalTivoli
+{
+	float: right;/* l'image flottera à droite du texte*/
+}
+.magazine
+{
+	width: 20%;/* la largeur de l'élément occupera 40 pourcent de la page*/
+	height: auto;/* la hauteur sera proportionnelle à la largeur pour ne pas déformer l'élément*/
+}
+.element
+{
+	background-color:rgb(3, 140, 140);/* couleur de l'élément*/
+	opacity: 0.9;/*opacité de l'élément*/
+	padding: 10px;/*définit les marges intérieures de l'élément*/
+	border-radius: 50px;/*défini les 4 angles de l'éléments*/
+	margin: 10px;/* défini les marges exterieur de l'élément*/
+}
+.element a
+{
+	color: white;/* couleur de l'élément*/
+}
+.ensemble
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.objet
+{
+	color: white;
+	border: double 3px;/* défini le type de bordure ainsi que son épaisseur*/
+	padding: 10px;
+	border-radius: 40px 15px 40px 15px; /* défini l'angles de l'élément angle par angl*/
+	margin: 10px;
+
+}
+.objet a
+{
+	color: white;
+}
+.image
+{
+	float: left;/* l'image flottera à gauche de l'élément*/
+}
+.hopitalHUDERF
+{
+	float: left;
+}
+.neuropediatre
+{	
+	text-indent : 35%;/* le texte sera indenté selon le nombre défini*/
+	font-size: 30px/* taille du texte*/
+
+}
+.conteneur
+{
+        display: grid;/* les éléments seront disposés en grille*/
+        gap: 5%;/* espace entre les éléments*/
+        
+}
+.conteneur h3
+{
+	text-align: center;
+}
+.publication
+{
+	border: 1px solid;
+	text-align: center;
+}
+.diagnostique
+{
+	border-bottom: 1px solid;/* défini l'epaisseur et le type de la bordure du bas*/
+}
+
+body
+{
+
+	font-family: Ancizar,Lora,Friends, sans-serif;/* défini la police du texte*/
+	color: black;
+}
+html, body 
+{
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;/*défini la direction de la ligne flex*/
+}
+header
+{
+	height: 30%
+}
+main 
+{
+	flex-grow: 1; /* permet d'adapter la place restante dans le flex en agrandissant les éléments compris dedans*/
+	padding: 4%;
+	margin-bottom: 20px;/* défini l'épaisseur de la marge intérieure du bas*/
+}
+article
+{
+	margin-bottom: 20px;
+}
+
+
+footer
+{
+	margin-top: 50px;/* défini l'épaisseur de la margeextérieure du haut*/
+    padding-top: 20px;/* défini l'épaisseur de la marge intérieur du haut*/
+	background-color:rgb(3, 140, 140);/* défini la couleur de fond d'écran de l'élément*/
+	opacity: 0.9;
+    padding: 15px;
+    flex-shrink: 0;/* défini la taille minimal de l'élément pour pouvoir contenir des éléments flexibles et donc modifier la taille de chaque élément*/
+
+}
+
+span
+{
+	text-align: right;
+}
+
+a
+{
+	color:black;
+}
+
+
+p
+{
+	float: left;
+}
+
+img
+{
+	width : 200px;
+	height : 210px;
+}
+h1
+{
+	text-indent: 26%;
+	font-size: 500%;
+}
+h2
+{
+  text-decoration: underline;/* défini la "décoration" de l'élément. ici, il est souligné*/
+}
+a
+{
+	text-decoration: none;/* supprime la décoration de l'élément*/
+}
+a:hover/* élément dynamique qui réagit à une action. ici, au survol de l'élément*/
+{
+	color:purple;
+}
+@media screen and (max-width: 712px) /* réflexivité dsuite à un rétrécissement de l'écran*/
+{
+
+
+    h1
+    {
+        font-size: 300%;
+        text-indent: 4%;
+    	text-align: center;
+
+    }
+    body
+    {
+    	font-family: Lora,Arial,Friends,sans-serif;
+    }
+     
+	header
+	{
+		height: 80%
+	}
+	main 
+	{
+		padding-top: 60px;
+		margin-bottom:65%		
+	}
+	article
+	{
+		margin-bottom: 50px;
+	}
+
+
+	footer
+	{
+		background-color:rgb(3, 140, 140);
+		opacity: 0.9;
+		padding: 10px;
+
+	}
+    nav 
+    {
+  		position: sticky;
+ 		top: 0;
+	}
+
+
+     .hopitalTivoli,.hopitalHUDERF
+     {
+		  float:none;/*suppression du flottement*/
+
+	}
+	.conteneur iframe
+	{
+		width: 100%;/* adaptation de l'iframe à la largeur de l'écran*/
+		height: auto;
+		text-align: center;
+	}
+	.conteneur h3
+	{
+		text-align: left;
+		size: 80%;
+		float: left;
+		padding-right: 0%;
+		position: sticky;
+		top: 0;
+		flex-shrink: 0;
+		width: 15%;
+		position: sticky;
+  		top: 10%;
+	}
+
+	.conteneur p
+	{
+		padding-left: 40%;
+	}
+	
+}
+
+
+@media (prefers-color-scheme: dark)
+{
+  body 
+  {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  a
+  {
+  	color: #ffffff;
+  }
+  p
+  {
+  	color: #ffffff;
+  }
+  .cas
+  {
+  	background-color: black;
+  }
+   .element a
+  {
+	color: black;
+  }
+  .objet
+  {
+	color: black;
+  }
+  .objet a
+  {
+	color: black;
+  }
+   .objet p
+  {
+	color: black;
+  }
+}
+ 
