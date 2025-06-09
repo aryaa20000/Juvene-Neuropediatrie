@@ -35,7 +35,7 @@
 }
 .magazine
 {
-	width: 40%;/* la largeur de l'élément occupera 40 pourcent de la page*/
+	width: 20%;/* la largeur de l'élément occupera 40 pourcent de la page*/
 	height: auto;/* la hauteur sera proportionnelle à la largeur pour ne pas déformer l'élément*/
 }
 .element
