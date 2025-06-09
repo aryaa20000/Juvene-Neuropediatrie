@@ -1,18 +1,19 @@
 /*police téléchargée*/
 @font-face
 { 
-	font-family:ancizar;
+	font-family:Ancizar;
 	src : url(police/ancizar/ancizarSerif-Italic-VariableFont_wght.ttf);
 }
 @font-face
 {
-    font-family: friends;
-    src: url(police/friends/gabrwffr.ttf);
+    font-family: Friends;
+    src: url(police/friends/friends.ttf);
+
 }
 @font-face
 { 
-	font-family:lora;
-	src : url(police/lora/lora-VariableFont_wght.ttf);
+	font-family:Lora;
+	src : url(police/lora/lora-variablefont_wght.ttf);
 }
 /* mise en page mise par défaut*/
 *
@@ -106,7 +107,7 @@
 body
 {
 
-	font-family: ancizar,lora,friends, sans-serif;/* défini la police du texte*/
+	font-family: Ancizar,friends, sans-serif;/* défini la police du texte*/
 	color: black;
 }
 html, body 
@@ -192,9 +193,13 @@ a:hover/* élément dynamique qui réagit à une action. ici, au survol de l'él
     	text-align: center;
 
     }
+    .neuropediatre
+    {
+    	text-indent: 30%;
+    }
     body
     {
-    	font-family: Lora,Arial,Friends,sans-serif;
+		font-family: Lora,Ancizar,friends, sans-serif;/* défini la police du texte*/
     }
      
 	header
